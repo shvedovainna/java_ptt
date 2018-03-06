@@ -1,22 +1,16 @@
 package ru.stqa.ptt.sandbox;
 
 public class MyFirstProgram {
-	
-	public static void main(String[] args) {
-		hello("world");
-		hello("user");
-		hello("Inna");
 
-		Square s = new Square(5);
-		s.l = 5;
-		System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
+  public static void main (String[] args) {
+    Point p1 = new Point(6,12);
+    Point p2 = new Point(17,25);
 
-		Rectangle r = new Rectangle(4, 6);
-		System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
-	}
+    System.out.println("Расстояние между двумя точками = " + distance(p1,p2));
+  }
 
-	public static void hello(String somebody) {
-		System.out.println("Hello, " + somebody + "!");
-	}
-
+  public static double distance(Point p1, Point p2) {
+    double distance = Math.sqrt((p2.a-p1.a)*(p2.a-p1.a)+(p2.b-p1.b)*(p2.b-p1.b));
+    return distance;
+  }
 }
