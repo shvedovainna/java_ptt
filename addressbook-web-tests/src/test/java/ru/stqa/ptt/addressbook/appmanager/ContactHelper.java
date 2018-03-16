@@ -1,8 +1,8 @@
-package ru.stqa.ptt.addressbook.appmanagerContact;
+package ru.stqa.ptt.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import ru.stqa.ptt.addressbook.modelContact.ContactData;
+import ru.stqa.ptt.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
 
